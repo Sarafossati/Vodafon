@@ -1,0 +1,575 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MENU */
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    border-bottom: red 5px solid;
+}
+
+.titolo{
+    width: 150px;
+}
+
+.nav{
+    text-decoration: none;
+    color: red;
+    padding-top: 15px;
+}
+
+.accedi{
+    background-color: red;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icona-accedi{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.barra{
+    color: red;
+    padding-top: 15px;
+}
+
+/* BANNER */
+
+.banner{
+    margin-top: 105px;
+    position: relative;
+}
+
+/* OFFERTE */
+
+h2{
+    color: red;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.migliori{
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.icona-freccia{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+/* CARD */
+
+.rettangolo-esterno{
+    border: red 2px solid;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 70px;
+    transition: transform .2s;
+}
+
+.rettangolo-esterno:hover{
+    background-color: rgba(229, 255, 0, 0.459);
+    cursor: pointer;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.rettangolo-rosso{
+    background-color: red;
+    height: 40px;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.rettangolo-scritte{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.div-illimitati{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.div-prezzo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.div-attivazione{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.per-i-clienti{
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.prezzo{
+    color: red;
+    font-size: 46px;
+}
+
+.illimitati{
+    color: red;
+    font-size: 30px;
+}
+
+.giga{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.gratis{
+    text-align: center;
+    color: red;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.decimali{
+    color: red;
+    font-size: 16px;
+}
+
+.acquista{
+    color: #ffffff;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+hr{
+    transform: rotate(90);
+    border-color: red;
+    color: red;
+    margin-top: 35px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* PROMOZIONI */
+
+.quarta{
+    margin-top: 50px;
+}
+
+.promo-rossa{
+    background-color: red;
+    width: 100%;
+    height: 750px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.quadrato{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.quadrato1{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+}
+
+.rettangolo{
+    width: 300px;
+    height: 630px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.promo-foto{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    display: block;
+}
+
+.promo-foto1{
+    height: 300px;
+    width: 270px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.promo-foto2{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.promo-foto2{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.uno {
+    grid-column: 1 ;
+    grid-row: 1;
+    margin-left: 30px;
+}
+
+.due { 
+    grid-column: 3 ;
+    grid-row: 1 / 2;
+    margin-left: 20px;
+}
+
+.tre {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 20px;
+}
+
+.quattro {
+    grid-column: 4;
+    grid-row: 1;
+    margin-left: 20px;
+}
+
+.cinque {
+    grid-column: 4;
+    grid-row: 2;
+    margin-left: 20px;
+}
+
+.sei{
+    grid-column: 1 / 3;
+    grid-row: 2;
+    margin-top: 70px;
+}
+
+.testo-iphone{
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    margin-top: 50px;
+}
+
+.scopri{
+    color: #ffffff;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.scopribianco{
+    color: red;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.smartphone{
+    color: #ffffff;
+    text-align: center;
+    font-size: 34px;
+}
+
+.smartphone1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hoverq{
+    transition: all 0,8s ease;
+}
+
+.hoverq:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+/* VANTAGGI */
+
+.totale{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.vantaggi{
+    height: 250px;
+    width: 250px;
+    border: red 3px solid;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.vantaggi:hover{
+    background-color: rgb(255, 0, 0);
+    box-shadow: 10px 10px #888888;
+}
+
+.foto-vantaggi{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.titoletto{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.titoletto1{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.scopri-vantaggi{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.div-vantaggi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* APP */
+
+.sfondo-sfumato{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, white , red);
+}
+
+.foto-app{
+    width: 400px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.flex-sfumato{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-colonna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.foto-store{
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.gestisci{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* PROMO CELLULARI */
+
+.rettangolo-esterno1{
+    border: red 2px solid;
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    margin-top: 70px;
+    transition: transform .2s;
+}
+
+.rettangolo-esterno1:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.faq-rosso{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quadrati-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.faq{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 15px;
+    width: 200px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.faq:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.portata{
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.testo-footer{
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.info{
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.testitesti{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
