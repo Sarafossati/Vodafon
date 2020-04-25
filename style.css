@@ -42,6 +42,10 @@ body{
     border-bottom: red 5px solid;
 }
 
+.icon {
+    display: none;
+}
+
 .titolo{
     width: 150px;
 }
@@ -50,6 +54,13 @@ body{
     text-decoration: none;
     color: red;
     padding-top: 15px;
+}
+
+.nav:hover{
+    background-color: red;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .accedi{
@@ -62,6 +73,7 @@ body{
     justify-content: flex-start;
     align-items: center;
 }
+
 
 .icona-accedi{
     width: 30px;
@@ -270,14 +282,6 @@ hr{
     width: 270px;
     display: block;
     margin: auto;
-    margin-top: 50px;
-}
-
-.promo-foto2{
-    height: 250px;
-    width: 250px;
-    margin: auto;
-    display: block;
     margin-top: 50px;
 }
 
@@ -573,3 +577,339 @@ h3{
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
+/* GRID AREAS */
+
+.grid-uno{
+    grid-area: header;
+}
+
+.grid-due{
+    grid-area: banner;
+}
+
+.grid-tre{
+    grid-area: offerte;
+}
+
+.grid-quattro{
+    grid-area: promozioni;
+}
+
+.grid-cinque{
+    grid-area: vantaggi;
+}
+
+.grid-sei{
+    grid-area: app;
+}
+
+.grid-sette{
+    grid-area: promo-cell;
+}
+
+.grid-otto{
+    grid-area: footer;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-areas: "header""banner""offerte""promozioni""vantaggi""app""promo-cell""footer";
+}
+
+@media (min-width: 1300px) {
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "banner banner banner"
+        "offerte offerte offerte"
+        "promozioni promozioni promozioni"
+        "vantaggi vantaggi vantaggi"
+        "app app app"
+        "promo-cell promo-cell promo-cell"
+        "footer footer footer";
+    }
+}
+
+@media (max-width: 1299px) {
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "banner banner banner"
+        "offerte offerte offerte"
+        "promozioni promozioni promozioni"
+        "vantaggi vantaggi vantaggi"
+        "app app app"
+        "promo-cell promo-cell promo-cell"
+        "footer footer footer";
+    }
+
+    .promo-rossa{
+        background-color: red;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0;
+        grid-auto-rows: minmax(100px, auto);
+    }
+   
+    .quadrato{
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        margin-top: 50px;
+    }
+    
+    .quadrato1{
+        width: 200px;
+        height: 200px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        margin-bottom: 70px;
+    }
+    
+    .rettangolo{
+        width: 200px;
+        height: 350px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        margin-top: 50px;
+    }
+
+    .promo-foto{
+        height: 150px;
+        width: 150px;
+        margin: auto;
+        display: block;
+    }
+    
+    .promo-foto1{
+        height: 150px;
+        width: 100px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .promo-foto2{
+        height: 150px;
+        width: 150px;
+        display: block;
+        margin: auto;
+    }
+
+    h3{
+        text-align: center;
+        color: red;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .testo-iphone{
+        text-align: center;
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .scopri{
+        color: #ffffff;
+        background-color: red;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .smartphone{
+        color: #ffffff;
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .smartphone1{
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .scopribianco{
+        color: red;
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .sei{
+        margin-top: 2px;
+    }
+
+    .vantaggi{
+        height: 150px;
+        width: 150px;
+        border: red 3px solid;
+        margin: 10px;
+        margin-top: 50px;
+    }
+
+    .foto-vantaggi{
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+    
+    .titoletto{
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .titoletto1{
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .scopri-vantaggi{
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "banner banner banner"
+        "offerte offerte offerte"
+        "promozioni promozioni promozioni"
+        "vantaggi vantaggi vantaggi"
+        "app app app"
+        "promo-cell promo-cell promo-cell"
+        "footer footer footer";
+    }
+
+    .promo-rossa{
+        background-color: red;
+        width: 100%;
+        height: 650px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .sei{
+        margin-top: 10px;
+    }
+
+    .cinque{
+        margin-top: 15px;
+    }
+
+    .quattro{
+        margin-top: 15px;
+    }
+
+    .smartphone{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .smartphone1{
+        font-size: 16px;
+    }
+
+    .portata{
+        margin-bottom: 10px;
+    }
+
+    .info{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "banner"
+        "offerte"
+        "promozioni"
+        "vantaggi"
+        "app"
+        "promo-cell"
+        "footer";
+    }
+
+    .promo-rossa{
+        background-color: red;
+        width: 100%;
+        height: 650px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      color: red;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: red;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+
+    .barra{
+        display: none;
+    }
+  }
